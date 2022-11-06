@@ -9,36 +9,42 @@
 </head>
 <body>
     <div class="container">
-        <form action="#" method="post" enctype="multipart/form-data">
-            <h2>Contact Us</h2>
-            <span>The Voodoo team is loking forward to hearing from you!</span>
-            <input type="text" name="username" placeholder="FullName*">
-            <input type="text" name="position" placeholder="Title/Position*">
-            <select name="Practice / Institution*">
+        <form class="contact-form" action="#" method="post" enctype="multipart/contact-data">
+            <div class="contact-form__top-wrapper">
+                <h2 class="contact-form__title">
+                    Contact Us
+                </h2>
+                <span class="contact-form__description">
+                    The Voodoo team is loking forward to hearing from you!
+                </span>
+            </div>
+            <input class="contact-form__element" type="text" name="username" placeholder="FullName*">
+            <input class="contact-form__element" type="text" name="position" placeholder="Title/Position*">
+            <select class="contact-form__element" name="Practice / Institution*">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2"></option>
+                <option value="Option 3"></option>
+                <option value="Option 4"></option>
+                <option value="Option 5"></option>
+            </select>
+            <input class="contact-form__element" type="email" placeholder="Email Address*" name="email">
+            <input class="contact-form__element" type="tel" placeholder="Phone Number*" name="tel">
+            <select class="contact-form__element"  name="Medical Profession*">
                 <option value="Option 1"></option>
                 <option value="Option 2"></option>
                 <option value="Option 3"></option>
                 <option value="Option 4"></option>
                 <option value="Option 5"></option>
             </select>
-            <input type="email" placeholder="Email Address*" name="email">
-            <input type="tel" placeholder="Phone Number*" name="tel">
-            <select name="Medical Profession*">
+            <select class="contact-form__inqury contact-form__element"  name="Type of Inquiry*">
                 <option value="Option 1"></option>
                 <option value="Option 2"></option>
                 <option value="Option 3"></option>
                 <option value="Option 4"></option>
                 <option value="Option 5"></option>
             </select>
-            <select name="Type of Inquiry*">
-                <option value="Option 1"></option>
-                <option value="Option 2"></option>
-                <option value="Option 3"></option>
-                <option value="Option 4"></option>
-                <option value="Option 5"></option>
-            </select>
-            <textarea name="message" placeholder="Enter Message*"></textarea>
-            <button type="submit">Send Message</button>
+            <textarea class="contact-form__text-area contact-form__element"  name="message" placeholder="Enter Message*"></textarea>
+            <button class="contact-form__button" type="submit">Send Message</button>
         </form>
         <div class="map"></div>
     </div>
