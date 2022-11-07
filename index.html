@@ -20,36 +20,37 @@
             </div>
             <input class="contact-form__element" type="text" name="username" placeholder="FullName*">
             <input class="contact-form__element" type="text" name="position" placeholder="Title/Position*">
-            <select class="contact-form__element" name="Practice / Institution*">
+            <select class="contact-form__select" name="Practice / Institution*">
                 <option value="Option 1">Option 1</option>
-                <option value="Option 2"></option>
-                <option value="Option 3"></option>
-                <option value="Option 4"></option>
-                <option value="Option 5"></option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+                <option value="Option 5">Option 5</option>
             </select>
             <input class="contact-form__element" type="email" placeholder="Email Address*" name="email">
             <input class="contact-form__element" type="tel" placeholder="Phone Number*" name="tel">
-            <select class="contact-form__element"  name="Medical Profession*">
-                <option value="Option 1"></option>
-                <option value="Option 2"></option>
-                <option value="Option 3"></option>
-                <option value="Option 4"></option>
-                <option value="Option 5"></option>
+            <select class="contact-form__select"  name="Medical Profession*">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+                <option value="Option 5">Option 5</option>
             </select>
-            <select class="contact-form__inqury contact-form__element"  name="Type of Inquiry*">
-                <option value="Option 1"></option>
-                <option value="Option 2"></option>
-                <option value="Option 3"></option>
-                <option value="Option 4"></option>
-                <option value="Option 5"></option>
+            <select class="contact-form__select_row contact-form__select"  name="Type of Inquiry*">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+                <option value="Option 5">Option 5</option>
             </select>
             <textarea class="contact-form__text-area contact-form__element"  name="message" placeholder="Enter Message*"></textarea>
             <button class="contact-form__button" type="submit">Send Message</button>
         </form>
-        <div id="map"></div>
+        <div id="map" class="map"></div>
     </div>
     <script src="./js/map.js"></script>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap"></script>
+    <script src="./js/select.js"></script>
 </body>
 </html>
