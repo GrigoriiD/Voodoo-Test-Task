@@ -111,17 +111,62 @@ body {
     background-color: #FFFFFF;
     color: #1A1A1A;
 }
-
-
-
-
-
-
-
-
-
-.map {
-    background-color: aquamarine;
+#map {
+    /* background-color: aquamarine; */
     width: 470px;
     height: 936px;
+}
+/* info icon */
+.gm-ui-hover-effect, .gm-style-iw-tc {
+    display: none!important;
+}
+
+.gm-style-iw ,.gm-style-iw-c {
+    width: 244px!important;
+    min-height: 100px!important;
+    padding: 20px 20px 6px 20px!important;
+    box-shadow: 0px 15px 30px rgba(220, 221, 243, 0.25);
+    border-radius: 8px!important;
+}
+.map-info__title {
+    font-weight: 700!important;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+.map-info__description {
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A1A1A!important;
+    margin: 0;
+}
+.map-info__tel ,.map-info__email {
+    position: relative!important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #858585;
+    display: block;
+    padding: 0 0 0 28px;
+}
+.map-info__tel::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 6px;
+    background-image: url(../img/iconLocation__phone.svg);
+    width: 12px;
+    height: 13px;
+}
+.map-info__email::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 6px;
+    background-image: url(../img/iconLocation__email.svg);
+    width: 12px;
+    height: 13px;
 }
